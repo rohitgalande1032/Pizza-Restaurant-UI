@@ -1,0 +1,150 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+#about, #menu {
+    width: 70%;
+    margin: auto;
+}
+
+.social {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+.bg-image {
+    background-image: url('./images/pizza1.jpg'); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Optional text shadow for readability */
+  }
+
+  /* Transparent navbar */
+  .navbar {
+    background-color: #000000; /* Semi-transparent black */
+  }
+  .navbar .nav-link {
+    color: white !important;
+  }
+
+  /* Content styling */
+  .content {
+    text-align: left;
+    
+    
+  }
+  .content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-family: Arial, sans-serif;
+  }
+
+  .orange-border {
+    border: 5px solid orangered;
+    width: 25%;
+    margin: 40px 0;
+  }
+
+  .content p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+
+  #about>h2, #menu>h2{
+    display: block;
+    text-align: center;
+    border-bottom: 4px solid orangered;
+    width: 20%;
+    margin: 20px auto;
+    padding: 10px 0;
+  }
+
+  .img-full {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .about-content {
+    position: relative;
+    padding-top: 10px;
+    margin-right: 50px;
+  }
+
+  .about-content::after {
+    content: ''; /* Creates an empty element for the border */
+      position: absolute;
+      left: 0%; /* Start from the center */
+      top: 0;
+      width: 50%; /* Set custom width for the border */
+      height: 3px; /* Adjust border thickness */
+      background-color: orangered; /* Set border color */
+  }
+
+  .menu-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .menu-card-image {
+   
+    margin-right: 20px;
+  }
+  .menu-card-image>img {
+    width: 275px;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .menu-card-desc>h4 {
+    color: #F2C94C;
+  }
+
+
+
+
+
+  
+  @media (max-width: 576px) { /* Target small devices and below */
+    .mobile-flex-wrap, .menu-card, .menu-card-main {
+      flex-wrap: wrap !important; /* Enable wrapping only for mobile */
+    }
+
+    #about, #menu {
+        width: 90%;
+        margin: auto;
+    }
+
+    .menu-card-image>img {
+        width: 300px;
+        height: 200px;
+    }
+  }
+
+
+
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ffffff' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M1.5 12.5a.75.75 0 0 1 0-1.5h13a.75.75 0 0 1 0 1.5h-13zm0-5a.75.75 0 0 1 0-1.5h13a.75.75 0 0 1 0 1.5h-13zm0-5a.75.75 0 0 1 0-1.5h13a.75.75 0 0 1 0 1.5h-13z'/%3E%3C/svg%3E");
+  }
+
+.navbar-toggler:focus, .navbar-toggler:active {
+    outline: none;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+  }
+
+
+
