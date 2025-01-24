@@ -14,7 +14,7 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <title>Document</title>
+    <title>Pizza UI</title>
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
@@ -81,9 +81,9 @@
     </main>
 
     <section id="about" class="container">
-      <h2>
+      <h4>
         About Us
-      </h2>
+      </h4>
 
       <div class="d-flex justify-content-between align-items-center mobile-flex-wrap">
         <div>
@@ -98,38 +98,146 @@
     </section>
 
     <section id="menu" class="container">
-      <h2>
+      <h4>
         Menu
-      </h2>
+      </h4>
 
       <p class="">
         Explore the wide range of pizza baked in fresh dough and vegetables. Our pizza will tempt all your excitement and senses. Made with a delicate balance of everything cheesy and spicy, you will get to savour the best pizza in town.  
       </p>
 
-      <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;" class="menu-card-main">
-        <div class="menu-card">
-          <div class="menu-card-image">
-            <img src="images/pizza1.jpg" alt="">
-          </div>
-          <div class="menu-card-desc">
-            <h4>Title</h4>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi autem facere enim, labore quidem molestias. Distinctio molestias voluptates blanditiis dicta?</p>
-          </div>
-        </div>
-        <div class="menu-card">
-          <div class="menu-card-image">
-            <img src="images/pizza8.jpg" alt="">
-          </div>
+      <div class="menu-card">
+        <div class="menu">
+          <img src="./images/pizza7.jpg">
           <div>
-            <h4>Title</h4>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi autem facere enim, labore quidem molestias. Distinctio molestias voluptates blanditiis dicta?</p>
+            <h4>Margherita Delight</h4>
+            <p>A classic with a thin crust topped with fresh mozzarella, tangy tomato sauce, and fragrant basil leaves.</p>
           </div>
         </div>
+        <div class="menu">
+          <img src="./images/pizza5.jpg">
+          <div>
+            <h4>Pepperoni Fiesta</h4>
+            <p>Loaded with spicy pepperoni slices, bubbling cheese, and a hint of garlic for extra flavor.</p>
+          </div>
+        </div>
+        <div class="menu">
+          <img src="./images/pizza6.jpg">
+          <div>
+            <h4>Veggie Overload</h4>
+            <p>Bursting with bell peppers, mushrooms, onions, olives, and a blend of mozzarella and cheddar.</p>
+          </div>
+        </div>
+        <div class="menu">
+          <img src="./images/pizza4.jpg">
+          <div>
+            <h4>Four Cheese Fusion</h4>
+            <p>A creamy medley of mozzarella, parmesan, gouda, and feta for a cheesy indulgence in every bite.</p>
+          </div>
+        </div>
+        <div class="menu">
+          <img src="./images/pizza3.jpg">
+          <div>
+            <h4>Spicy Italian Sausage </h4>
+            <p class="menu-text">opped with seasoned sausage, red chili flakes, and roasted red peppers for a fiery twist.</p>
+          </div>
+        </div>
+        <div class="menu">
+          <img src="./images/pizza2.jpg">
+          <div>
+            <h4>Margherita Delight</h4>
+            <p>Our classic cheese pizza is a must try for all pizza lovers. Made with a</p>
+          </div>
+        </div>
+        
+      </div>
        
       </div>
     </section>
 
+    <section id="carousal">
+      <h4>Carousal</h4>
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./images/pizza7.jpg" class="w-100" alt="Pizza">
+          </div>
+          <div class="carousel-item active">
+            <img src="./images/pizza4.jpg" class="w-100" alt="Pizza">
+          </div>
+          <div class="carousel-item active">
+            <img src="./images/pizza6.jpg" class="w-100" alt="Pizza">
+          </div>
+          <div class="carousel-item active">
+            <img src="./images/pizza5.jpg" class="w-100" alt="Pizza">
+          </div>
+          <div class="carousel-item active">
+            <img src="./images/pizza2.jpg" class="w-100" alt="Pizza">
+          </div>
+         
+          
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+   
 
+    <section id="gallary">
+      <h4>Gallery</h4>
+      <div class="pizza-gallary">
+        <div class="section section-1"><img src="./images/pizza2.jpg" alt="Pizza" style="height: 100%; width: 100%; object-fit: cover;"></div>
+        <div class="section section-2"><img src="./images/pizza7.jpg" alt="Pizza" style="height: 100%; width: 100%; object-fit: cover;"></div>
+        <div class="section section-3"><img src="./images/pizza4.jpg" alt="Pizza" style="height: 100%; width: 100%; object-fit: cover;"></div>
+        <div class="section section-4"><img src="./images/pizza6.jpg" alt="Pizza" style="height: 100%; width: 100%; object-fit: cover;"></div>
+        <div class="section section-5"><img src="./images/pizza5.jpg" alt="Pizza" style="height: 100%; width: 100%; object-fit: cover;"></div>
+        <div class="section section-6"><img src="./images/pizza2.jpg" alt="Pizza" style="height: 100%; width: 100%; object-fit: cover;"></div>
+      </div>
+    </section>
+    
+
+    <section id="find-us">
+      <h4>Find Us</h4>
+      <div class="contact">
+        <div>
+          <p>Lorem ipsum dolor sit amet couae fuga dolore? Eveniet obcaecati, provident maiores sed laborum perferendis dolor unde fugiat fuga cum hic consectetur assumenda. Itaque sequi ea aperiam sed nesciunt mollitia ipsa molestias?</p>
+          <p><img src="./images/phone.png" style="width: 40px; height: 40px; margin-right: 10px;"> Phone: 1234567890</p>
+          <p><img src="./images/envelope.png" style="width: 40px; height: 40px; margin-right: 10px;">Email: info@pizza.com</p>
+        </div>
+        <div>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d121059.04711156077!2d73.78056543154413!3d18.524598599502376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf2e67461101%3A0x828d43bf9d9ee343!2sPune%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1737729057935!5m2!1sen!2sin" 
+          width="500" 
+          height="300" 
+          loading="lazy" 
+        </iframe>
+        </div>
+      </div>
+    </section>
+    
+  
+    <footer id="footer">
+      <div #footer-image>
+        <img src="./images/Group.png" style="width: 100px; height: 100px;">
+      </div>
+      <div>
+        <p><img src="./images/phone.png" style="width: 40px; height: 30px; margin-right: 10px;"> Phone: 1234567890</p>
+        <p><img src="./images/envelope.png" style="width: 40px; height: 30px; margin-right: 10px;">Email: info@pizza.com</p>
+        
+      </div>
+    </footer>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
